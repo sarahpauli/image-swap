@@ -1,0 +1,78 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background: #dfecf1; 
+    color: #333; 
+    margin: 3rem; 
+}
+
+img {
+    max-width: 100%;
+    border-radius: 2rem;
+    margin: auto;
+}
+
+#content {
+    background: #f8fbfc;
+    margin: auto;
+    padding: 2rem;
+    width: 50%;
+}
+
+p {
+    text-align: left;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+a {
+    color: #295769;
+}
+
+a:hover {
+    color: #4e92ad;
+}
+
+/*ID Displays*/
+#kauaiscene {
+    display: block;
+}
+
+#kauaispecific {
+    display: none;
+}
+
+#oahuscene {
+    display: block;
+    cursor: pointer;
+}
+
+#oahuspecific {
+    display: none;
+    cursor: pointer;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 800px){
+    body {
+        margin: 1rem;
+    }
+
+    #content {
+        padding: 1rem;
+        width: 98%;
+    }
+}
+
+
