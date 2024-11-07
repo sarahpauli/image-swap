@@ -16,6 +16,7 @@ img {
     max-width: 100%;
     border-radius: 2rem;
     margin: auto;
+    display: block;
 }
 
 #content {
@@ -35,6 +36,8 @@ h1, h2 {
     font-family: 'Georgia', serif;
 }
 
+/*Links*/
+
 a {
     color: #295769;
 }
@@ -43,22 +46,9 @@ a:hover {
     color: #4e92ad;
 }
 
-/*ID Displays*/
-#kauaiscene {
-    display: block;
-}
-
-#kauaispecific {
-    display: none;
-}
+/*ID Specials*/
 
 #oahuscene {
-    display: block;
-    cursor: pointer;
-}
-
-#oahuspecific {
-    display: none;
     cursor: pointer;
 }
 

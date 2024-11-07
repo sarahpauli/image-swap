@@ -1,33 +1,23 @@
 //JS Hover
 
-const image = document.getElementById('kauaiimg');
+const image = document.querySelector('#kauaiscene');
 
 image.onmouseenter = (e) => {
-	document.getElementById("kauaiscene").style.display = "none";
-    document.getElementById("kauaispecific").style.display = "block";
+   e.target.setAttribute('src', 'images/kauaispecific.JPG');
 };
 
 image.onmouseleave = (e) => {
-    document.getElementById("kauaispecific").style.display = "none";
-    document.getElementById("kauaiscene").style.display = "block";
+   e.target.setAttribute('src', 'images/kauaiscene.JPG');
 };
 
 //JS Click
 
-const image2 = document.getElementById('oahuimg');
+const image2 = document.querySelector('#oahuscene');
 
-let scene = true;
-
-image2.onclick = (c) => {
-    if (scene === true){
-        document.getElementById("oahuscene").style.display = "none";
-        document.getElementById("oahuspecific").style.display = "block";
-        scene = false;
+image2.onclick = (e) => {
+    if (image2.getAttribute('src') === 'images/oahuscene.JPG') {
+        image2.setAttribute('src', 'images/oahuspecific.jpg');
     } else {
-        document.getElementById("oahuspecific").style.display = "none";
-        document.getElementById("oahuscene").style.display = "block";
-        scene = true;
+        image2.setAttribute('src', 'images/oahuscene.JPG');
     }
 }
-
-
